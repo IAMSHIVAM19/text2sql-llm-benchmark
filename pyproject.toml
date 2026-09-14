@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "text2sql-llm-benchmark"
+version = "0.1.0"
+description = "Fine-tuning and rigorous benchmarking of small LLMs for Text-to-SQL on free-tier GPUs"
+readme = "README.md"
+authors = [{ name = "IAMSHIVAM19" }]
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.2.0",
+    "transformers>=4.40.0",
+    "peft>=0.10.0",
+    "bitsandbytes>=0.43.0",
+    "accelerate>=0.29.0",
+    "tqdm>=4.66.0",
+    "tabulate>=0.9.0",
+    "requests>=2.31.0",
+]
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra -q --tb=short"

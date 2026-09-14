@@ -1,0 +1,30 @@
+# Python & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environment
+venv/
+env/
+.env
+
+# Testing & Cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Datasets (download via scripts/download_spider.py)
+data/raw/
+data/processed/
+*.sqlite
+*.zip
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# Large Model weights (70MB safetensors - keep repo lightweight)
+*.safetensors
+checkpoint-*/
