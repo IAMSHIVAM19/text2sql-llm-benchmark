@@ -1,0 +1,58 @@
+{
+  "total_queries": 1034,
+  "correct_queries": 607,
+  "valid_sql_queries": 809,
+  "execution_accuracy": 0.5870406189555126,
+  "valid_sql_rate": 0.7823984526112185,
+  "tier_accuracy": {
+    "easy": {
+      "total": 406,
+      "correct": 311,
+      "accuracy": 0.7660098522167488
+    },
+    "medium": {
+      "total": 303,
+      "correct": 153,
+      "accuracy": 0.504950495049505
+    },
+    "hard": {
+      "total": 166,
+      "correct": 86,
+      "accuracy": 0.5180722891566265
+    },
+    "extra": {
+      "total": 159,
+      "correct": 57,
+      "accuracy": 0.3584905660377358
+    }
+  },
+  "query_type_accuracy": {
+    "single_table": {
+      "total": 252,
+      "correct": 180,
+      "accuracy": 0.7142857142857143
+    },
+    "join": {
+      "total": 331,
+      "correct": 146,
+      "accuracy": 0.44108761329305134
+    },
+    "aggregation": {
+      "total": 292,
+      "correct": 224,
+      "accuracy": 0.7671232876712328
+    },
+    "nested": {
+      "total": 159,
+      "correct": 57,
+      "accuracy": 0.3584905660377358
+    }
+  },
+  "error_breakdown": {
+    "SCHEMA_ERROR": 196,
+    "RESULT_MISMATCH": 202,
+    "EXECUTION_ERROR": 27,
+    "TIMEOUT": 1,
+    "SYNTAX_ERROR": 1
+  }
+}
